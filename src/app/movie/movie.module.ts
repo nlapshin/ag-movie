@@ -18,3 +18,6 @@ import { MovieComponent } from './movie.component';
   exports: [MovieComponent]
 })
 export class MovieModule { }
+
+// npm run start
+// localhost:4200

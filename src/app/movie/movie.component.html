@@ -1,3 +1,18 @@
 <div>
-  <pre>{{ movie | json }}</pre>
+  <img [src]="movie.Poster" />
+  <div class="title">
+    <span>{{ movie.Title }}(2001)</span>
+  </div>
+  <div>
+    Рейтинг:
+    <ul>
+      <li *ngFor="let item of movie.Ratings">
+        {{item.Source}}: {{item.Value}}
+      </li>
+    </ul>
+  </div>
+  <div>
+    Описание:
+    {{movie.Plot}}
+  </div>
 </div>
