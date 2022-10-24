@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MovieService } from './movie.service'
 import { MovieComponent } from './movie.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
-    MovieComponent
+    MovieComponent,
+    MovieCardComponent
   ],
   imports: [
     CommonModule,
