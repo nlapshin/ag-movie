@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'movie-card',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./movie-card.component.css']
 })
 export class MovieCardComponent {
-  movie: any = null
+  @Input() movie: any = {} 
+  // пометить, что это свойство
+  // не просто а принимает входные данные
 }

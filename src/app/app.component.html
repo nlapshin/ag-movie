@@ -1,3 +1,22 @@
 <div>
-  <movie></movie>
+  <input type="number" [(ngModel)]="initCounter" />
+
+  <counter [value]="initCounter"></counter>
+
+  <button (click)="decCounter(1)">-1</button>
+  <button (click)="decCounter(5)">-5</button>
+
+  <button (click)="incCounter(1)">+1</button>
+  <button (click)="incCounter(5)">+5</button>
+
+  <div class="container">
+    <label>Цвет фона: </label>
+    <input type="text" [(ngModel)]="style.backgroundColor" />
+    <label>Цвет текста: </label>
+    <input type="text" [(ngModel)]="style.color" />
+    <button (click)="toogleDisplay()">{{buttonText}}</button>
+    <div class="block" [ngStyle]="style">
+        Тест
+    </div> 
+  </div>
 </div>
